@@ -21,7 +21,7 @@ interface InitialStateTypes {
 
 export const initialState: InitialStateTypes = {
   filters: {
-    location: "Los Angeles",
+    location: "Pune",
     beds: "any",
     baths: "any",
     propertyType: "any",
@@ -29,7 +29,7 @@ export const initialState: InitialStateTypes = {
     availableFrom: "any",
     priceRange: [null, null],
     squareFeet: [null, null],
-    coordinates: [-118.25, 34.05],
+    coordinates: [73.8567, 18.5204], //Default coordinates for Pune
     zoomLevel: 9,
   },
   isFiltersFullOpen: false,

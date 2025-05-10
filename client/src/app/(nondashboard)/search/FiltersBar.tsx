@@ -116,7 +116,7 @@ const FiltersBar = () => {
         {/* Search Location */}
         <div className="flex items-center">
           <Input
-            placeholder="Search location"
+            placeholder="Search Property By City"
             value={searchInput}
             onChange={(e) => setSearchInput(e.target.value)}
             className="w-40 rounded-l-xl rounded-r-none border-primary-400 border-r-0"

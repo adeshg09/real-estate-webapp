@@ -11,10 +11,11 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
+import Loading from "@/components/Loading";
 
 const NewProperty = () => {
   const [createProperty] = useCreatePropertyMutation();
-  const { data: authUser } = useGetAuthUserQuery();
+  const { data: authUser, isLoading } = useGetAuthUserQuery();
   const router = useRouter();
 
   const form = useForm<PropertyFormData>({
@@ -236,7 +237,7 @@ const NewProperty = () => {
               type="submit"
               className="bg-primary-700 text-white w-full mt-8"
             >
-              Create Property
+              {isLoading ? <Loading /> : "Create Property"}
             </Button>
           </form>
         </Form>
