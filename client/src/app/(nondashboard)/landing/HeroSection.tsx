@@ -69,7 +69,6 @@ const HeroSection = () => {
   };
 
   return (
-    // DESIGN CHANGE: Modern hero with gradient overlay and improved typography
     <div className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background Image with Parallax Effect */}
       <Image
@@ -80,10 +79,8 @@ const HeroSection = () => {
         priority
       />
 
-      {/* DESIGN CHANGE: Modern gradient overlay instead of solid black */}
       <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/50 to-transparent"></div>
 
-      {/* DESIGN CHANGE: Animated gradient accent */}
       <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 via-transparent to-purple-600/20"></div>
 
       {/* Content Container */}
@@ -94,7 +91,6 @@ const HeroSection = () => {
         className="relative z-10 w-full px-6 sm:px-8 lg:px-12"
       >
         <div className="max-w-5xl mx-auto">
-          {/* DESIGN CHANGE: Badge for credibility */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -109,7 +105,6 @@ const HeroSection = () => {
             </div>
           </motion.div>
 
-          {/* DESIGN CHANGE: Modern typography with better hierarchy */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -132,7 +127,6 @@ const HeroSection = () => {
             your journey to finding a place you&apos;ll love to call home.
           </motion.p>
 
-          {/* DESIGN CHANGE: Modern search bar with glassmorphism */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -194,7 +188,6 @@ const HeroSection = () => {
               </div>
             </div>
 
-            {/* DESIGN CHANGE: Popular searches suggestions */}
             <div className="mt-4 flex flex-wrap justify-center gap-2">
               <span className="text-sm text-gray-300">Popular:</span>
               {["Mumbai", "Delhi", "Bangalore", "Pune"].map((city) => (
@@ -211,7 +204,6 @@ const HeroSection = () => {
             </div>
           </motion.div>
 
-          {/* DESIGN CHANGE: Trust indicators */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -234,7 +226,6 @@ const HeroSection = () => {
         </div>
       </motion.div>
 
-      {/* DESIGN CHANGE: Scroll indicator */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, y: [0, 10, 0] }}

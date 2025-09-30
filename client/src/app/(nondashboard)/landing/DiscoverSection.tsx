@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, easeOut } from "framer-motion";
 import Image from "next/image";
 
 const containerVariants = {
@@ -19,13 +19,12 @@ const itemVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.6, ease: "easeOut" },
+    transition: { duration: 0.6, ease: easeOut },
   },
 };
 
 const DiscoverSection = () => {
   return (
-    // DESIGN CHANGE: Modern background with subtle pattern
     <motion.div
       initial="hidden"
       whileInView="visible"
@@ -33,7 +32,6 @@ const DiscoverSection = () => {
       variants={containerVariants}
       className="relative py-20 sm:py-28 bg-gray-900 overflow-hidden"
     >
-      {/* DESIGN CHANGE: Animated background pattern */}
       <div className="absolute inset-0 opacity-10">
         <div
           className="absolute inset-0"
@@ -44,12 +42,10 @@ const DiscoverSection = () => {
         ></div>
       </div>
 
-      {/* DESIGN CHANGE: Gradient orbs for depth */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
-        {/* DESIGN CHANGE: Modern section header with contrasting colors */}
         <motion.div variants={itemVariants} className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white text-sm font-semibold mb-4">
             <span className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></span>
@@ -67,7 +63,6 @@ const DiscoverSection = () => {
           </p>
         </motion.div>
 
-        {/* DESIGN CHANGE: Modern process cards with connection lines */}
         <div className="relative grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
           {/* Connection line for desktop */}
           <div className="hidden md:block absolute top-20 left-1/4 right-1/4 h-0.5 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"></div>
@@ -108,7 +103,6 @@ const DiscoverSection = () => {
           ))}
         </div>
 
-        {/* DESIGN CHANGE: Stats section for credibility */}
         <motion.div
           variants={itemVariants}
           className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10"
@@ -147,7 +141,6 @@ const DiscoverCard = ({
   color: string;
   index: number;
 }) => (
-  // DESIGN CHANGE: Glassmorphism cards with modern styling
   <div className="group relative h-full">
     {/* Number badge */}
     <div className="absolute -top-4 left-8 z-20">

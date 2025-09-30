@@ -11,9 +11,7 @@ import {
 
 const FooterSection = () => {
   return (
-    // DESIGN CHANGE: Modern footer with gradient background
     <footer className="relative bg-gradient-to-b from-gray-900 to-black text-gray-300">
-      {/* DESIGN CHANGE: Decorative top border */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-500 to-transparent"></div>
 
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
@@ -31,7 +29,6 @@ const FooterSection = () => {
               dreams come true, one property at a time.
             </p>
 
-            {/* DESIGN CHANGE: Social icons with modern styling */}
             <div className="flex gap-3">
               {[
                 { icon: faFacebook, label: "Facebook", href: "#" },

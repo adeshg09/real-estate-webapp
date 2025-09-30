@@ -7,9 +7,7 @@ import Link from "next/link";
 
 const CallToActionSection = () => {
   return (
-    // DESIGN CHANGE: Modern CTA with improved layout and interactivity
     <div className="relative py-32 overflow-hidden">
-      {/* Background Image with parallax effect */}
       <Image
         src="/landing-call-to-action.jpg"
         alt="Rentiful Search Section Background"
@@ -17,10 +15,8 @@ const CallToActionSection = () => {
         className="object-cover object-center scale-110"
       />
 
-      {/* DESIGN CHANGE: Modern gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/70 to-transparent"></div>
 
-      {/* DESIGN CHANGE: Animated gradient accent */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-600/30 to-purple-600/30 mix-blend-overlay"></div>
 
       <motion.div
@@ -33,7 +29,6 @@ const CallToActionSection = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div>
-            {/* DESIGN CHANGE: Badge for urgency */}
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -61,7 +56,6 @@ const CallToActionSection = () => {
               deals.
             </p>
 
-            {/* DESIGN CHANGE: Feature list with icons */}
             <div className="space-y-4 mb-8">
               {[
                 { icon: "M5 13l4 4L19 7", text: "Verified listings only" },
@@ -102,7 +96,6 @@ const CallToActionSection = () => {
               ))}
             </div>
 
-            {/* DESIGN CHANGE: Modern CTA buttons */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -216,7 +209,6 @@ const CallToActionSection = () => {
         </div>
       </motion.div>
 
-      {/* DESIGN CHANGE: Decorative elements */}
       <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600"></div>
     </div>
   );

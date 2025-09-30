@@ -49,7 +49,6 @@ const AppSidebar = ({ userType }: AppSidebarProps) => {
         ];
 
   return (
-    // DESIGN CHANGE: Light sidebar with glassmorphism matching landing page
     <Sidebar
       collapsible="icon"
       className="fixed left-0 bg-white/80 backdrop-blur-xl shadow-xl border-r border-gray-200/50"
@@ -58,7 +57,6 @@ const AppSidebar = ({ userType }: AppSidebarProps) => {
         height: `calc(100vh - ${NAVBAR_HEIGHT}px)`,
       }}
     >
-      {/* DESIGN CHANGE: Subtle gradient overlay matching landing page */}
       <div className="absolute inset-0 bg-gradient-to-b from-blue-50/30 via-white/50 to-purple-50/30 pointer-events-none"></div>
 
       <SidebarHeader className="relative z-10">
@@ -72,7 +70,6 @@ const AppSidebar = ({ userType }: AppSidebarProps) => {
             >
               {open ? (
                 <>
-                  {/* DESIGN CHANGE: Gradient text matching landing page */}
                   <div>
                     <h1 className="text-lg font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                       {userType === "manager" ? "Manager" : "Renter"}
@@ -117,7 +114,6 @@ const AppSidebar = ({ userType }: AppSidebarProps) => {
                   )}
                 >
                   <Link href={link.href} className="w-full" scroll={false}>
-                    {/* DESIGN CHANGE: Active indicator matching landing page gradient */}
                     {isActive && (
                       <div className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-8 bg-white rounded-r-full shadow-lg"></div>
                     )}
@@ -128,7 +124,6 @@ const AppSidebar = ({ userType }: AppSidebarProps) => {
                         open ? "gap-3" : "justify-center"
                       )}
                     >
-                      {/* DESIGN CHANGE: Icon styling matching landing page */}
                       <div
                         className={cn(
                           "relative flex items-center justify-center rounded-lg transition-all duration-300",
@@ -161,7 +156,6 @@ const AppSidebar = ({ userType }: AppSidebarProps) => {
                         </span>
                       )}
 
-                      {/* DESIGN CHANGE: Arrow for active item */}
                       {open && isActive && (
                         <svg
                           className="ml-auto h-4 w-4 text-white"
@@ -179,7 +173,6 @@ const AppSidebar = ({ userType }: AppSidebarProps) => {
                       )}
                     </div>
 
-                    {/* DESIGN CHANGE: Subtle hover effect */}
                     {!isActive && (
                       <div className="absolute inset-0 bg-gradient-to-r from-blue-100/0 to-purple-100/0 group-hover:from-blue-100/30 group-hover:to-purple-100/30 rounded-xl transition-all duration-300"></div>
                     )}
@@ -190,7 +183,6 @@ const AppSidebar = ({ userType }: AppSidebarProps) => {
           })}
         </SidebarMenu>
 
-        {/* DESIGN CHANGE: Help card matching landing page design */}
         {open && (
           <div className="absolute bottom-6 left-3 right-3">
             <div className="p-4 rounded-2xl bg-gradient-to-br from-blue-50 to-purple-50 border border-blue-200/50 shadow-lg">
@@ -240,7 +232,6 @@ const AppSidebar = ({ userType }: AppSidebarProps) => {
         )}
       </SidebarContent>
 
-      {/* DESIGN CHANGE: Gradient border matching landing page */}
       <div className="absolute top-0 right-0 bottom-0 w-px bg-gradient-to-b from-transparent via-blue-300/50 to-transparent"></div>
     </Sidebar>
   );

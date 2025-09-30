@@ -39,9 +39,7 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <SidebarProvider>
-      {/* DESIGN CHANGE: Light, airy background matching landing page */}
       <div className="min-h-screen w-full bg-gradient-to-br from-white via-gray-50/50 to-blue-50/30 relative overflow-hidden">
-        {/* DESIGN CHANGE: Subtle dot pattern like landing page */}
         <div className="fixed inset-0 opacity-[0.015] pointer-events-none">
           <div
             className="absolute inset-0"
@@ -52,7 +50,6 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
           ></div>
         </div>
 
-        {/* DESIGN CHANGE: Soft gradient orbs matching landing page */}
         <div className="fixed top-20 right-20 w-[500px] h-[500px] bg-gradient-to-br from-blue-200/20 to-purple-200/20 rounded-full blur-3xl pointer-events-none"></div>
         <div className="fixed bottom-20 left-20 w-[500px] h-[500px] bg-gradient-to-br from-purple-200/20 to-pink-200/20 rounded-full blur-3xl pointer-events-none"></div>
 
@@ -62,7 +59,6 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
           <main className="flex relative z-10">
             <Sidebar userType={authUser.userRole.toLowerCase()} />
 
-            {/* DESIGN CHANGE: Clean content area with subtle shadow */}
             <div className="flex-grow transition-all duration-300">
               <div className="min-h-screen">{children}</div>
             </div>
