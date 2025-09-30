@@ -92,7 +92,7 @@ const FiltersFull = () => {
       <div className="flex flex-col space-y-6">
         {/* Location */}
         <div>
-          <h4 className="font-bold mb-2">Location</h4>
+          <h4 className="font-bold mb-2">Property Location (Search By City)</h4>
           <div className="flex items-center">
             <Input
               placeholder="Enter location"

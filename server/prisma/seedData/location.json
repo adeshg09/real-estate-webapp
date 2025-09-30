@@ -1,92 +1,317 @@
 [
   {
     "id": 1,
-    "country": "United States",
-    "city": "Pasadena",
-    "state": "CA",
-    "address": "123 Colorado Blvd",
-    "postalCode": "91105",
-    "coordinates": "POINT(-118.144516 34.147785)"
+    "country": "India",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "address": "Lane 7, Koregaon Park",
+    "postalCode": "411001",
+    "coordinates": "POINT(73.8957 18.5362)"
   },
   {
     "id": 2,
-    "country": "United States",
-    "city": "Santa Monica",
-    "state": "CA",
-    "address": "456 Ocean Ave",
-    "postalCode": "90401",
-    "coordinates": "POINT(-118.496513 34.013654)"
+    "country": "India",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "address": "Rajiv Gandhi Infotech Park, Hinjewadi Phase 1",
+    "postalCode": "411057",
+    "coordinates": "POINT(73.7242 18.5912)"
   },
   {
     "id": 3,
-    "country": "United States",
-    "city": "Burbank",
-    "state": "CA",
-    "address": "789 Hollywood Way",
-    "postalCode": "91505",
-    "coordinates": "POINT(-118.328661 34.180839)"
+    "country": "India",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "address": "Hill Road, Bandra West",
+    "postalCode": "400050",
+    "coordinates": "POINT(72.8281 19.0596)"
   },
   {
     "id": 4,
-    "country": "United States",
-    "city": "Long Beach",
-    "state": "CA",
-    "address": "101 Pine Ave",
-    "postalCode": "90802",
-    "coordinates": "POINT(-118.192604 33.766720)"
+    "country": "India",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "address": "Chakala, Andheri East",
+    "postalCode": "400059",
+    "coordinates": "POINT(72.8697 19.1136)"
   },
   {
     "id": 5,
-    "country": "United States",
-    "city": "New York",
-    "state": "NY",
-    "address": "555 Manhattan Ave",
-    "postalCode": "10001",
-    "coordinates": "POINT(-74.005941 40.712784)"
+    "country": "India",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "address": "Hiranandani Gardens, Powai",
+    "postalCode": "400076",
+    "coordinates": "POINT(72.9050 19.1197)"
   },
   {
     "id": 6,
-    "country": "United States",
-    "city": "Malibu",
-    "state": "CA",
-    "address": "888 Malibu Road",
-    "postalCode": "90265",
-    "coordinates": "POINT(-118.774518 34.025922)"
+    "country": "India",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "address": "Airport Road, Viman Nagar",
+    "postalCode": "411014",
+    "coordinates": "POINT(73.9197 18.5679)"
   },
   {
     "id": 7,
-    "country": "United States",
-    "city": "Glendale",
-    "state": "CA",
-    "address": "777 Brand Blvd",
-    "postalCode": "91203",
-    "coordinates": "POINT(-118.254708 34.142508)"
+    "country": "India",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "address": "ITPL Main Road, Whitefield",
+    "postalCode": "560066",
+    "coordinates": "POINT(77.7499 12.9698)"
   },
   {
     "id": 8,
-    "country": "United States",
-    "city": "Torrance",
-    "state": "CA",
-    "address": "555 Torrance Blvd",
-    "postalCode": "90503",
-    "coordinates": "POINT(-118.352575 33.835849)"
+    "country": "India",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "address": "100 Feet Road, Indiranagar",
+    "postalCode": "560038",
+    "coordinates": "POINT(77.6408 12.9716)"
   },
   {
     "id": 9,
-    "country": "United States",
-    "city": "Miami",
-    "state": "FL",
-    "address": "1234 Ocean Dr",
-    "postalCode": "33139",
-    "coordinates": "POINT(-80.130045 25.782551)"
+    "country": "India",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "address": "Koramangala 5th Block",
+    "postalCode": "560095",
+    "coordinates": "POINT(77.6309 12.9352)"
   },
   {
     "id": 10,
-    "country": "United States",
-    "city": "Beverly Hills",
-    "state": "CA",
-    "address": "789 Rodeo Dr",
-    "postalCode": "90210",
-    "coordinates": "POINT(-118.400356 34.073620)"
+    "country": "India",
+    "city": "Delhi",
+    "state": "Delhi",
+    "address": "M Block Market, Greater Kailash I",
+    "postalCode": "110048",
+    "coordinates": "POINT(77.2426 28.5494)"
+  },
+  {
+    "id": 11,
+    "country": "India",
+    "city": "Delhi",
+    "state": "Delhi",
+    "address": "Vasant Vihar Market",
+    "postalCode": "110057",
+    "coordinates": "POINT(77.1593 28.5672)"
+  },
+  {
+    "id": 12,
+    "country": "India",
+    "city": "Delhi",
+    "state": "Delhi",
+    "address": "Sector 12, Dwarka",
+    "postalCode": "110075",
+    "coordinates": "POINT(77.0460 28.5921)"
+  },
+  {
+    "id": 13,
+    "country": "India",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "address": "Road No 12, Banjara Hills",
+    "postalCode": "500034",
+    "coordinates": "POINT(78.4376 17.4239)"
+  },
+  {
+    "id": 14,
+    "country": "India",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "address": "Cyber Towers, Gachibowli",
+    "postalCode": "500032",
+    "coordinates": "POINT(78.3482 17.4399)"
+  },
+  {
+    "id": 15,
+    "country": "India",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "address": "Film Nagar, Jubilee Hills",
+    "postalCode": "500033",
+    "coordinates": "POINT(78.4089 17.4326)"
+  },
+  {
+    "id": 16,
+    "country": "India",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "address": "Lattice Bridge Road, Adyar",
+    "postalCode": "600020",
+    "coordinates": "POINT(80.2574 13.0067)"
+  },
+  {
+    "id": 17,
+    "country": "India",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "address": "100 Feet Road, Velachery",
+    "postalCode": "600042",
+    "coordinates": "POINT(80.2207 12.9750)"
+  },
+  {
+    "id": 18,
+    "country": "India",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "address": "Anna Nagar West",
+    "postalCode": "600040",
+    "coordinates": "POINT(80.2088 13.0878)"
+  },
+  {
+    "id": 19,
+    "country": "India",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "address": "Paud Road, Kothrud",
+    "postalCode": "411038",
+    "coordinates": "POINT(73.8074 18.5074)"
+  },
+  {
+    "id": 20,
+    "country": "India",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "address": "Annie Besant Road, Worli",
+    "postalCode": "400018",
+    "coordinates": "POINT(72.8181 19.0176)"
+  },
+  {
+    "id": 21,
+    "country": "India",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "address": "Mumbai-Bangalore Highway, Aundh",
+    "postalCode": "411007",
+    "coordinates": "POINT(73.8074 18.5642)"
+  },
+  {
+    "id": 22,
+    "country": "India",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "address": "Hosur Road, Electronic City Phase 1",
+    "postalCode": "560100",
+    "coordinates": "POINT(77.6648 12.8456)"
+  },
+  {
+    "id": 23,
+    "country": "India",
+    "city": "Delhi",
+    "state": "Delhi",
+    "address": "Kashmere Gate, Civil Lines",
+    "postalCode": "110054",
+    "coordinates": "POINT(77.2273 28.6642)"
+  },
+  {
+    "id": 24,
+    "country": "India",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "address": "Juhu Tara Road, Juhu",
+    "postalCode": "400049",
+    "coordinates": "POINT(72.8263 19.0990)"
+  },
+  {
+    "id": 25,
+    "country": "India",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "address": "G Block, Bandra Kurla Complex",
+    "postalCode": "400051",
+    "coordinates": "POINT(72.8681 19.0653)"
+  },
+  {
+    "id": 26,
+    "country": "India",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "address": "Dasve, Lavasa",
+    "postalCode": "412112",
+    "coordinates": "POINT(73.5087 18.4069)"
+  },
+  {
+    "id": 27,
+    "country": "India",
+    "city": "Delhi",
+    "state": "Delhi",
+    "address": "Hauz Khas Village",
+    "postalCode": "110016",
+    "coordinates": "POINT(77.2062 28.5494)"
+  },
+  {
+    "id": 28,
+    "country": "India",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "address": "27th Main Road, HSR Layout Sector 1",
+    "postalCode": "560102",
+    "coordinates": "POINT(77.6387 12.9116)"
+  },
+  {
+    "id": 29,
+    "country": "India",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "address": "Mindspace, Hitech City",
+    "postalCode": "500081",
+    "coordinates": "POINT(78.3685 17.4485)"
+  },
+  {
+    "id": 30,
+    "country": "India",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "address": "Aparna Cyber Life, Kondapur",
+    "postalCode": "500084",
+    "coordinates": "POINT(78.3648 17.4609)"
+  },
+  {
+    "id": 31,
+    "country": "India",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "address": "Shivaji Nagar Main Road",
+    "postalCode": "411005",
+    "coordinates": "POINT(73.8430 18.5308)"
+  },
+  {
+    "id": 32,
+    "country": "India",
+    "city": "Delhi",
+    "state": "Delhi",
+    "address": "Press Enclave Road, Saket",
+    "postalCode": "110017",
+    "coordinates": "POINT(77.2122 28.5244)"
+  },
+  {
+    "id": 33,
+    "country": "India",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "address": "LBS Marg, Mahim",
+    "postalCode": "400016",
+    "coordinates": "POINT(72.8405 19.0412)"
+  },
+  {
+    "id": 34,
+    "country": "India",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "address": "Nagavara, Manyata Tech Park",
+    "postalCode": "560045",
+    "coordinates": "POINT(77.6206 13.0359)"
+  },
+  {
+    "id": 35,
+    "country": "India",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "address": "Kutchery Road, Mylapore",
+    "postalCode": "600004",
+    "coordinates": "POINT(80.2675 13.0339)"
   }
 ]

@@ -62,14 +62,14 @@ const SettingsForm = ({
               <Button
                 type="button"
                 onClick={toggleEditMode}
-                className="bg-secondary-500 text-white hover:bg-secondary-600"
+                className="md:ml-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-none shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] rounded-lg"
               >
                 {editMode ? "Cancel" : "Edit"}
               </Button>
               {editMode && (
                 <Button
                   type="submit"
-                  className="bg-primary-700 text-white hover:bg-primary-800"
+                  className="md:ml-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-none shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] rounded-lg"
                 >
                   Save Changes
                 </Button>

@@ -39,13 +39,32 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <SidebarProvider>
-      <div className="min-h-screen w-full bg-primary-100">
+      {/* DESIGN CHANGE: Light, airy background matching landing page */}
+      <div className="min-h-screen w-full bg-gradient-to-br from-white via-gray-50/50 to-blue-50/30 relative overflow-hidden">
+        {/* DESIGN CHANGE: Subtle dot pattern like landing page */}
+        <div className="fixed inset-0 opacity-[0.015] pointer-events-none">
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage: `radial-gradient(circle at 2px 2px, rgba(59, 130, 246, 0.3) 1px, transparent 0)`,
+              backgroundSize: "48px 48px",
+            }}
+          ></div>
+        </div>
+
+        {/* DESIGN CHANGE: Soft gradient orbs matching landing page */}
+        <div className="fixed top-20 right-20 w-[500px] h-[500px] bg-gradient-to-br from-blue-200/20 to-purple-200/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div className="fixed bottom-20 left-20 w-[500px] h-[500px] bg-gradient-to-br from-purple-200/20 to-pink-200/20 rounded-full blur-3xl pointer-events-none"></div>
+
         <Navbar />
+
         <div style={{ marginTop: `${NAVBAR_HEIGHT}px` }}>
-          <main className="flex">
+          <main className="flex relative z-10">
             <Sidebar userType={authUser.userRole.toLowerCase()} />
+
+            {/* DESIGN CHANGE: Clean content area with subtle shadow */}
             <div className="flex-grow transition-all duration-300">
-              {children}
+              <div className="min-h-screen">{children}</div>
             </div>
           </main>
         </div>

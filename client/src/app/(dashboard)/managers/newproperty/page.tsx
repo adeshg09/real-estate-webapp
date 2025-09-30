@@ -235,7 +235,7 @@ const NewProperty = () => {
 
             <Button
               type="submit"
-              className="bg-primary-700 text-white w-full mt-8"
+              className="md:ml-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-none shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] rounded-lg w-full"
             >
               {isLoading ? <Loading /> : "Create Property"}
             </Button>
