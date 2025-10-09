@@ -12,6 +12,7 @@ import {
 } from "@aws-amplify/ui-react";
 import "@aws-amplify/ui-react/styles.css";
 import { useRouter, usePathname } from "next/navigation";
+import { useGetAuthUserQuery } from "@/state/api";
 
 // https://docs.amplify.aws/gen1/javascript/tools/libraries/configure-categories/
 Amplify.configure({
@@ -141,6 +142,8 @@ const formFields = {
 
 const Auth = ({ children }: { children: React.ReactNode }) => {
   const { user } = useAuthenticator((context) => [context.user]);
+  const { data: authUser } = useGetAuthUserQuery();
+
   const router = useRouter();
   const pathname = usePathname();
 
@@ -150,10 +153,16 @@ const Auth = ({ children }: { children: React.ReactNode }) => {
 
   // Redirect authenticated users away from auth pages
   useEffect(() => {
+    console.log("user", user);
     if (user && isAuthPage) {
-      router.push("/");
+      router.push(
+        authUser?.userRole?.toLowerCase() === "manager"
+          ? "/managers/properties"
+          : "/tenants/favorites",
+        { scroll: false }
+      );
     }
-  }, [user, isAuthPage, router]);
+  }, [user, isAuthPage, router, authUser?.userRole]);
 
   // Allow access to public pages without authentication
   if (!isAuthPage && !isDashboardPage) {
